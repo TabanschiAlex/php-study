@@ -10,3 +10,12 @@
     var_dump(intdiv(5, 2));
     var_dump(5 / 2);
     var_dump((int) (25 / 3.5));
+
+
+// без отступов
+echo <<<END
+      a
+     b
+    c
+\n
+END;
