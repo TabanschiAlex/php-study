@@ -38,7 +38,7 @@
     var_dump((bool) array());
 
     $arr = array(1, 2, 3);
-    echo $foo = "10.0 pigs " + 1.0;
+    echo @$foo = "10.0 pigs " + 1.0;
 
     $hashtable = [
         NAN => 'value'
@@ -66,13 +66,11 @@
     $array = array_values($array);
     $array[] = 5;
 
-echo $array[2] . "\n";
+echo @$array[2] . "\n";
 
 var_dump($array);
 
 const PI = 3.14;
-
-echo array_diff([1], [1, 2]);
 
 $colors = ['red', 'blue', 'green', 'yellow'];
 
@@ -81,3 +79,7 @@ foreach ($colors as &$color) {
 }
 
 print_r($colors);
+
+
+
+
